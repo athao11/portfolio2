@@ -1,0 +1,43 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: gray;
+}
+
+h1{
+    font-family: fonteLogo;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.particulas {
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: auto;
+    margin-top: 0vw;
+
+    position: absolute;
+    animation: animacao 40s infinite;
+}
+
+@keyframes animacao {
+    0%   { transform: translate(0, 0); height: 0.38vw; width: 0.38vw; } 
+    12%  { transform: translate(10px, 10px); height: 0.19vw; width: 0.19vw; } 
+    25%  { transform: translate(0, -10px); height: 0.38vw; width: 0.38vw; } 
+    50%  { transform: translate(10px, -10px); height: 0.38vw; width: 0.38vw; } 
+    75%  { transform: translate(0, 30px); height: 0.22vw; width: 0.22vw; } 
+    87%  { transform: translate(10px, 10px); height: 0.17vw; width: 0.17vw; } 
+    100% { transform: translate(0, 0); height: 0.38vw; width: 0.38vw; } 
+}
+
+
+@font-face {
+    font-family: fonteLogo;
+    src: url(/fontes/Steinerlight.ttf);
+  }

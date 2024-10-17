@@ -1,0 +1,126 @@
+#container0{
+    background-image: linear-gradient(rgb(31, 26, 26), rgb(84, 78, 78));
+    display: flex;
+    flex-direction: column;
+    border: solid;
+    border-color: black;
+    box-shadow: -4vw 4vh 4vw black;
+    z-index: 1;
+} 
+
+
+#athao{
+    border-radius: 500px;
+    height: 23vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 250px;
+    margin-top: 100px;
+    z-index: 1;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(91, 84, 84);
+    
+}
+
+h1{
+    color: white;
+    margin-left: 10px;
+    margin-right: 900px;
+    margin-top: 30px;
+    font-size: 50px;
+    font-stretch: ultra-expanded;
+    height: 50px;  
+    width: 900px;
+    font-family: fonteLogo;
+
+}
+
+h4{ 
+    color: white;
+    margin-right: 800px;
+    margin-left: 25px;
+    font-family: fonteLogo;
+    margin-top: 13px;
+}
+
+.particulas {
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: auto;
+    margin-top: 0vw;
+
+    position: absolute;
+    animation: animacao 40s infinite;
+}
+
+@keyframes animacao {
+    0%   { transform: translate(0, 0); height: 0.38vw; width: 0.38vw; } 
+    12%  { transform: translate(10px, 10px); height: 0.19vw; width: 0.19vw; } 
+    25%  { transform: translate(0, -10px); height: 0.38vw; width: 0.38vw; } 
+    50%  { transform: translate(10px, -10px); height: 0.38vw; width: 0.38vw; } 
+    75%  { transform: translate(0, 30px); height: 0.22vw; width: 0.22vw; } 
+    87%  { transform: translate(10px, 10px); height: 0.17vw; width: 0.17vw; } 
+    100% { transform: translate(0, 0); height: 0.38vw; width: 0.38vw; } 
+}
+
+
+@font-face {
+    font-family: fonteLogo;
+    src: url(/fontes/Steinerlight.ttf);
+  }
+
+  a{
+    color: white;
+    text-decoration: none;
+    font-size: 35px;
+    border-radius: 10px;
+   margin-top: 50px;
+  }
+
+  #arredondado{
+    position: absolute;
+    top: -5px;
+    border-radius: 50%;
+    border: solid;
+    border-color: black;
+    height: 700px;
+    width: 700px;
+    display: flex;
+    margin-left: 800px;
+    background-image: linear-gradient(rgb(138, 130, 130), rgb(31, 26, 26));
+    box-shadow: -2vw 2vh 4vw black;
+  }
+
+#biografia{
+    margin-left: -250px;
+    margin-top: 250px;
+    color: white;
+    font-size: 25px;
+    width: 300px;
+    font-family: fonteBio;
+    z-index: 9;
+}
+
+@font-face {
+    font-family: fonteBio;
+    src: url(/fontes/DUBIEL.TTF);
+  }
+
+
+  #menu{
+    position: relative;
+    top: 50px;
+  }
